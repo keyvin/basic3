@@ -1,0 +1,27 @@
+# depslib dependency file v1.0
+1691007940 source:/home/keyvin/Desktop/basic3/tokens.c
+	<string.h>
+	<stdlib.h>
+	<stdint.h>
+	<stdio.h>
+	"tokens.h"
+
+1691015913 /home/keyvin/Desktop/basic3/tokens.h
+	<stdint.h>
+
+1691029045 source:/home/keyvin/basic3/tokens.c
+	<string.h>
+	<stdlib.h>
+	<stdint.h>
+	<stdio.h>
+	"tokens.h"
+
+1691108966 /home/keyvin/basic3/tokens.h
+	<stdint.h>
+
+1691030549 source:/home/keyvin/basic3/main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"tokens.h"
+
