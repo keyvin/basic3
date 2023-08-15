@@ -5,7 +5,7 @@
 #define TOKEN_ERROR_1 "INVALID TOKEN"
 //this cannot be less than t_string_info
 #define MAX_TOKEN_LENGTH 20
-#define MAX_STRING 128
+#define MAX_STRING 255
 #define MAX_TOKENS 45
 #define PLUS 1
 #define MINUS 2
@@ -49,9 +49,12 @@
 #define MID 39
 #define NEGATE 40
 //Other Tokens
-
-#define VAR 101  //next two bytes reference a var
+#define ARRAY_TOKEN 100
+#define VAR_TOKEN 101  //next two bytes reference a var
+#define INT_TOKEN 102
+#define SING_TOKEN 103
 #define STR_TOKEN 102  //references a string
+
 
 #define FLOW_START 20   //where flow control tokens start
 #define STR_MATCH_NUM 15    //number of chars toattempt a match.
@@ -85,7 +88,7 @@ typedef struct TOKEN {
 
 typedef struct T_STRING_INFO {
   char *start;
-  unsigned int length;
+  uint8_t length;
 } t_string_info;
 
 extern token buffer;

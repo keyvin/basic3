@@ -187,6 +187,7 @@ void read(char **string, token *token) {
 
 	  }
 	}
+
 	if(token->type == STRING){
 	  ptr++;
 	  char *start = ptr;
@@ -194,7 +195,7 @@ void read(char **string, token *token) {
 	    ptr++;
 	  if (*ptr=='\n' || *ptr=='\0')
 	    goto ERROR;
-	  t_string_info *info = (t_string_info *)(token->value);
+	  t_string_info *info = (t_string_info *)(token->value);   //store a t_string_info in token->value
 	  info->start = start;
 	  info->length = (unsigned int) (ptr-start);
 	  ptr++;
@@ -214,7 +215,11 @@ void dump_token(token to_dump)
 
   switch (to_dump.type)   {
   case FLOAT:
+    printf("FLOAT: %s\n", to_dump.value);
+    break;
   case INTEGER:
+    printf("INTEGER: %s\n", to_dump.value);
+    break;
   case SYMBOL:
     printf("SYMBOL:   %s\n", to_dump.value);
     break;

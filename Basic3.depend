@@ -9,19 +9,27 @@
 1691015913 /home/keyvin/Desktop/basic3/tokens.h
 	<stdint.h>
 
-1691029045 source:/home/keyvin/basic3/tokens.c
+1691951466 source:/home/keyvin/basic3/tokens.c
 	<string.h>
 	<stdlib.h>
 	<stdint.h>
 	<stdio.h>
 	"tokens.h"
 
-1691108966 /home/keyvin/basic3/tokens.h
+1692066252 /home/keyvin/basic3/tokens.h
 	<stdint.h>
 
-1691030549 source:/home/keyvin/basic3/main.c
+1692066926 source:/home/keyvin/basic3/main.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"tokens.h"
+	"bmath.h"
+
+1691891285 /home/keyvin/basic3/bmath.h
+
+1691892127 source:/home/keyvin/basic3/bmath.c
+	"bmath.h"
+	"tokens.h"
+	"string.h"
 
